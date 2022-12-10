@@ -14,6 +14,8 @@ struct ContentView : View {
     var body: some View {
         ZStack {
             ARViewContainer(arViewModel: arViewModel).frame(width:  arViewModel.isSmiling ? 0 : 0, height: 0)
+            //isSmiling is refreshing it frame.
+            //isSmiling only work if ARViewContainer is on the screen, can stay with 0 frame.
             Color.red.ignoresSafeArea()
         }
     }
