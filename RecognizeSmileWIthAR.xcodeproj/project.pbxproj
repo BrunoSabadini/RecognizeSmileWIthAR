@@ -15,6 +15,8 @@
 		A798C4BE2943D3F0006AD36C /* RecognizeSmileWIthARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798C4BD2943D3F0006AD36C /* RecognizeSmileWIthARTests.swift */; };
 		A798C4C82943D3F0006AD36C /* RecognizeSmileWIthARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798C4C72943D3F0006AD36C /* RecognizeSmileWIthARUITests.swift */; };
 		A798C4CA2943D3F0006AD36C /* RecognizeSmileWIthARUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798C4C92943D3F0006AD36C /* RecognizeSmileWIthARUITestsLaunchTests.swift */; };
+		A798C4D72943D5EB006AD36C /* ARModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798C4D62943D5EB006AD36C /* ARModel.swift */; };
+		A798C4D92943D660006AD36C /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A798C4D82943D660006AD36C /* ARViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		A798C4C32943D3F0006AD36C /* RecognizeSmileWIthARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecognizeSmileWIthARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A798C4C72943D3F0006AD36C /* RecognizeSmileWIthARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeSmileWIthARUITests.swift; sourceTree = "<group>"; };
 		A798C4C92943D3F0006AD36C /* RecognizeSmileWIthARUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizeSmileWIthARUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A798C4D62943D5EB006AD36C /* ARModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARModel.swift; sourceTree = "<group>"; };
+		A798C4D82943D660006AD36C /* ARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				A798C4AA2943D3EF006AD36C /* AppDelegate.swift */,
+				A798C4D82943D660006AD36C /* ARViewModel.swift */,
+				A798C4D62943D5EB006AD36C /* ARModel.swift */,
 				A798C4AC2943D3EF006AD36C /* ContentView.swift */,
 				A798C4AE2943D3EF006AD36C /* Experience.rcproject */,
 				A798C4B02943D3F0006AD36C /* Assets.xcassets */,
@@ -260,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A798C4D92943D660006AD36C /* ARViewModel.swift in Sources */,
+				A798C4D72943D5EB006AD36C /* ARModel.swift in Sources */,
 				A798C4AD2943D3EF006AD36C /* ContentView.swift in Sources */,
 				A798C4AB2943D3EF006AD36C /* AppDelegate.swift in Sources */,
 				A798C4AF2943D3EF006AD36C /* Experience.rcproject in Sources */,

@@ -5,29 +5,25 @@
 //  Created by Bruno Sabadini on 09/12/22.
 //
 
+
 import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    @ObservedObject var arViewModel : ARViewModel = ARViewModel()
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack {
+            ARViewContainer(arViewModel: arViewModel).frame(width:  arViewModel.isSmiling ? 0 : 0, height: 0)
+            Color.red.ignoresSafeArea()
+        }
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
-    
+    var arViewModel: ARViewModel
     func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        return arView
-        
+        arViewModel.startSessionDelegate()
+        return arViewModel.arView
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {}
